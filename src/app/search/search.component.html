@@ -1,0 +1,8 @@
+<h3>Search Fruit of Your Choice</h3>
+<input
+  type="text"
+  (change)="searchText = $any($event.target).value"
+  [value]="searchText"
+/>
+<button (click)="search()" type="button">Go</button>
+<button (click)="reset()" type="button">Clear</button>

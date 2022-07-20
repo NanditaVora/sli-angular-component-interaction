@@ -1,0 +1,5 @@
+<app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
+<h4>Fruit Box</h4>
+<app-result-card *ngFor="let result of filteredResults" [result]="result">
+  <ng-content></ng-content>
+</app-result-card>
