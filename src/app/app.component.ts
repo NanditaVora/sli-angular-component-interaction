@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'component-interaction-demo';
+
+  fruitAdded: string = "";
+  onFruitAdded(fruitName: string) {
+    this.fruitAdded = fruitName;
+
+  }
 }

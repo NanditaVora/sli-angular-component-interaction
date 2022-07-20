@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Fruit } from '../models/fruit';
 
 @Component({
   selector: 'app-result-card',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./result-card.component.css'],
 })
 export class ResultCardComponent implements OnInit {
-  @Input() result: string = '';
+  @Input() result?: Fruit ;
   constructor() {}
 
   ngOnInit() {}

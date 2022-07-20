@@ -1,0 +1,24 @@
+form {
+    border: 1px solid lightblue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px 1px;
+    height: auto;
+    width: 400px;
+    padding: 10px;
+}
+
+.field {
+    margin-top: 5px;
+    display: flex;
+}
+.field-label {
+    margin-left: 10px;
+    width: 100px;
+}
+.save-button {
+    margin-top: 5px;
+    display: flex;
+}
+.save-button input{
+    align-items: flex-end;
+}

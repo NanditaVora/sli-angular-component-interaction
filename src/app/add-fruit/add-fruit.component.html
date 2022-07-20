@@ -1,0 +1,18 @@
+<form >
+    <h3>Add New Fruit</h3>
+    <div class="field">
+        <label class="field-label" for="fruit-name">Fruit Name : </label>
+        <input type="text" id="fruit-name" [(ngModel)]="fruit.name" name="name">
+    </div>
+    <div class="field">
+        <label class="field-label" for="fruit-price">Price in USD : </label>
+        <input type="text" id="fruit-price" [(ngModel)]="fruit.price" name="price">
+    </div>
+    <div class="field">
+        <label class="field-label" for="unit">Price for Per : </label>
+        <input type="text" id="unit" [(ngModel)]="fruit.unit" name="unit">
+    </div>
+    <div class="save-button">
+        <input type="button" value="Save" (click)="saveFruit()">
+    </div>
+</form>

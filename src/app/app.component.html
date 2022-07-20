@@ -1,2 +1,3 @@
 <h1>Fruit Fantasy</h1>
-<app-search-results></app-search-results>
+<app-add-fruit (fruitAdded) = "onFruitAdded($event)"></app-add-fruit>
+<app-search-results [fruitAdded] = "fruitAdded"></app-search-results>
