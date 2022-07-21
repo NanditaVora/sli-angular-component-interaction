@@ -1,18 +1,22 @@
-<form >
-    <h3>Add New Fruit</h3>
-    <div class="field">
-        <label class="field-label" for="fruit-name">Fruit Name : </label>
-        <input type="text" id="fruit-name" [(ngModel)]="fruit.name" name="name">
-    </div>
-    <div class="field">
-        <label class="field-label" for="fruit-price">Price in USD : </label>
-        <input type="text" id="fruit-price" [(ngModel)]="fruit.price" name="price">
-    </div>
-    <div class="field">
-        <label class="field-label" for="unit">Price for Per : </label>
-        <input type="text" id="unit" [(ngModel)]="fruit.unit" name="unit">
-    </div>
-    <div class="save-button">
-        <input type="button" value="Save" (click)="saveFruit()">
-    </div>
-</form>
+<mat-expansion-panel style="width: 50%;margin:auto;margin-top:30px; margin-bottom: 30px;">
+    <mat-expansion-panel-header>
+        <h3>Add New Fruit</h3>
+    </mat-expansion-panel-header>
+    <form>
+        <mat-form-field class="field">
+            <mat-label class="field-label" for="fruit-name">Fruit Name : </mat-label>
+            <input matInput type="text" id="fruit-name" [(ngModel)]="fruit.name" name="name">
+        </mat-form-field>
+        <mat-form-field class="field">
+            <mat-label class="field-label" for="fruit-price">Price in USD : </mat-label>
+            <input matInput type="text" id="fruit-price" [(ngModel)]="fruit.price" name="price">
+        </mat-form-field>
+        <mat-form-field class="field">
+            <mat-label class="field-label" for="unit">Price for Per : </mat-label>
+            <input matInput matInput type="text" id="unit" [(ngModel)]="fruit.unit" name="unit">
+        </mat-form-field>
+        <div class="save-button">
+            <input type="button" value="Save" (click)="saveFruit()">
+        </div>
+    </form>
+</mat-expansion-panel>

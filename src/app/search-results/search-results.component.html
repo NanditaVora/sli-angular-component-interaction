@@ -1,5 +1,6 @@
+<div style="border: 1px solid grey;border-radius: 20px; width: 70%; margin: auto" >
 <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
-<h4>Fruit Box</h4>
+<h2 style="display:flex;justify-content: center;">Fresh Fruits of The Day</h2>
 <!-- <app-result-card *ngFor="let result of filteredResults" [result]="result">
   <ng-content></ng-content>
 </app-result-card> -->
@@ -7,3 +8,4 @@
 <app-result-card *ngFor="let fruit of filteredFruits" [result]="fruit">
   <ng-content></ng-content>
 </app-result-card>
+</div>

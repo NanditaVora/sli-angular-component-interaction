@@ -3,4 +3,5 @@ export class Fruit {
     name?: string;
     price?: number;
     unit?: string;
+    imageURL?: string;
 }

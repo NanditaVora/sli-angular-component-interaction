@@ -1,8 +1,11 @@
-<h4>Search Fruit of Your Choice</h4>
-<input
-  type="text"
-  (change)="searchText = $any($event.target).value"
-  [value]="searchText"
-/>
-<button (click)="search()" type="button">Go</button>
-<button (click)="reset()" type="button">Clear</button>
+<!-- <div style="display:flex; "> -->
+<!-- <h4>Search Fruit of Your Choice</h4> -->
+<div style="display:flex; justify-content: end">
+  <mat-form-field>
+    <input matInput type="text" placeholder="Search Fruit" (change)="searchText = $any($event.target).value"
+      [value]="searchText" />
+  </mat-form-field>
+  <button mat-button color="accent" (click)="search()" type="button">Go</button>
+  <button mat-button color="accent" (click)="reset()" type="button">Clear</button>
+</div>
+<!-- </div> -->

@@ -34,7 +34,6 @@ export class SearchResultsComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.fruitAdded);
     this.fruitService.getFruits().subscribe(data => {
       this.fruits = data;
       this.filteredFruits = [...this.fruits];

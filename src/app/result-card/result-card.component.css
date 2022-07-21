@@ -1,14 +1,14 @@
 .card {
-    border: 1px solid grey;
-    border-radius: 20px;
-    width: 250px;
-    height: 50px;
+    /* border: 1px solid grey; */
+    /* border-radius: 20px; */
+    /* width: 250px; */
+    /* height: 50px; */
     padding: 10px;
     margin: 30px;
     display: inline-flex;
-    background-color: pink;
+    /* background-color: pink; */
     flex-direction: column;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif */
 
 }
 .card-title {
